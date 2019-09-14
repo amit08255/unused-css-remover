@@ -88,6 +88,7 @@ google-chrome   --remote-debugging-port=8000
 Now the Google chrome will be started with remote debugging server at port - 8000
 
 When server is started you are provided an URL like --  ws://127.0.0.1:8000/devtools/browser/82ee571e-8485-4514-ae74-34b6affbad3b
+
 Copy the URL we will need that later.
 
 
@@ -102,7 +103,7 @@ In above command link1, link2 and link3 are links of same website that you want 
 ```sh
 node cleaner.js ws://127.0.0.1:8000/devtools/browser/82ee571e-8485-4514-ae74-34b6affbad3b http://localhost:7000 http://localhost:7000/centre/2 http://localhost:7000/login
 ```
-Above command will launch our script and open urls - http://7000, http://7000/centre/2 and http://localhost:7000/login one by one to scan the CSS.
+Above command will launch our script and open urls - http://localhost:7000, http://localhost:7000/centre/2 and http://localhost:7000/login one by one to scan the CSS.
 
 ## How It Works
 Once the script is started, it will open link in Chrome browser, you now have to use the website (move mouse over button, resize screen, and use other functions) this will be used to extract all the CSS that are left behind (or not scanned). Just remember, your action should not redirect to other page or the script will not work properly for opened URL. Also remember that the URL that, if your website has section that requires login, you need to login before using website in script and for pages that needs to logout, clear cookie before opening that page in script. Every time a page is opened, the scripts pauses and asks to press any key to continue, this feature is added so that you can interact with your website page before continuing to next one so that CSS is extracted well.
