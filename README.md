@@ -42,7 +42,7 @@
 - [Getting Started](#getting-started)
 - [Example](#example)
 - [How It Works](#how-it-works)
-- [License](#licens)
+- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
